@@ -1,0 +1,2 @@
+com.pet.pipi.framework.tracer.config.PipiTracerAutoConfiguration
+com.pet.pipi.framework.tracer.config.PipiMetricsAutoConfiguration

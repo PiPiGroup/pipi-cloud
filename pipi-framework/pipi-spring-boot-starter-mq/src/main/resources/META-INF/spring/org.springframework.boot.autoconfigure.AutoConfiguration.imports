@@ -1,0 +1,3 @@
+com.pet.pipi.framework.mq.redis.config.PipiRedisMQProducerAutoConfiguration
+com.pet.pipi.framework.mq.redis.config.PipiRedisMQConsumerAutoConfiguration
+com.pet.pipi.framework.mq.rabbitmq.config.PipiRabbitMQAutoConfiguration

@@ -1,0 +1,3 @@
+com.pet.pipi.framework.datasource.config.PipiDataSourceAutoConfiguration
+com.pet.pipi.framework.mybatis.config.PipiMybatisAutoConfiguration
+com.pet.pipi.framework.translate.config.PipiTranslateAutoConfiguration

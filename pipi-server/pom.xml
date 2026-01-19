@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.pet.pipicloud</groupId>
+        <artifactId>pipi</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>pipi-server</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>
+        后端 Server 的主项目，通过引入需要 pipi-module-xxx 的依赖，
+        从而实现提供 RESTful API 给 pipi-ui-admin、pipi-ui-user 等前端项目。
+        本质上来说，它就是个空壳（容器）！
+    </description>
+    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.pet.pipicloud</groupId>
+            <artifactId>pipi-module-system-server</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pet.pipicloud</groupId>
+            <artifactId>pipi-module-infra-server</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 会员中心。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-member-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- 数据报表。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-report-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+        <!-- 工作流。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-bpm-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+        <!-- 支付服务。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-pay-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- 微信公众号模块。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-mp-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- 商城相关模块。默认注释，保证编译速度-->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-product-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-promotion-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-trade-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-statistics-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- CRM 相关模块。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-crm-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- ERP 相关模块。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-erp-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- AI 大模型相关模块。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-ai-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- IoT 物联网相关模块。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.pet.pipicloud</groupId>-->
+<!--            <artifactId>pipi-module-iot-server</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- spring boot 配置所需依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 服务保障相关 -->
+        <dependency>
+            <groupId>com.pet.pipicloud</groupId>
+            <artifactId>pipi-spring-boot-starter-protection</artifactId>
+        </dependency>
+
+        <!-- Registry 注册中心相关 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!-- Config 配置中心相关 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- RPC 远程调用相关 -->
+        <dependency>
+            <groupId>com.pet.pipicloud</groupId>
+            <artifactId>pipi-spring-boot-starter-rpc</artifactId>
+            <!-- 目的：pipi-server 单体启动，禁用 openfeign -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-openfeign</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <!-- 设置构建的 jar 包名 -->
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <!-- 打包 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal> <!-- 将引入的 jar 打入其中 -->
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

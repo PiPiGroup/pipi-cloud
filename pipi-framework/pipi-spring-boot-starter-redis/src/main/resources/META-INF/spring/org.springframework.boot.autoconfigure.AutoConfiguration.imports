@@ -1,0 +1,2 @@
+com.pet.pipi.framework.redis.config.PipiRedisAutoConfiguration
+com.pet.pipi.framework.redis.config.PipiCacheAutoConfiguration

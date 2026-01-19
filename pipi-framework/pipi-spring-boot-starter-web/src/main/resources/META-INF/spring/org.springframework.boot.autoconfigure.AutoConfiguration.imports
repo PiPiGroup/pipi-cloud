@@ -1,0 +1,8 @@
+com.pet.pipi.framework.apilog.config.PipiApiLogAutoConfiguration
+com.pet.pipi.framework.jackson.config.PipiJacksonAutoConfiguration
+com.pet.pipi.framework.swagger.config.PipiSwaggerAutoConfiguration
+com.pet.pipi.framework.web.config.PipiWebAutoConfiguration
+com.pet.pipi.framework.apilog.config.PipiApiLogRpcAutoConfiguration
+com.pet.pipi.framework.xss.config.PipiXssAutoConfiguration
+com.pet.pipi.framework.banner.config.PipiBannerAutoConfiguration
+com.pet.pipi.framework.encrypt.config.PipiApiEncryptAutoConfiguration

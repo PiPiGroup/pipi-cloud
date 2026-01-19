@@ -1,0 +1,2 @@
+com.pet.pipi.framework.tenant.config.PipiTenantRpcAutoConfiguration
+com.pet.pipi.framework.tenant.config.PipiTenantAutoConfiguration

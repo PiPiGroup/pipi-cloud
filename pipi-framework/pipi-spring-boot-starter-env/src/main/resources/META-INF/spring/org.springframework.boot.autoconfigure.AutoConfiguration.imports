@@ -1,0 +1,2 @@
+com.pet.pipi.framework.env.config.PipiEnvWebAutoConfiguration
+com.pet.pipi.framework.env.config.PipiEnvRpcAutoConfiguration

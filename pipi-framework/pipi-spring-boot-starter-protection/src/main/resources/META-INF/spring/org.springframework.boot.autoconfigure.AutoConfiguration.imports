@@ -1,0 +1,4 @@
+com.pet.pipi.framework.idempotent.config.PipiIdempotentConfiguration
+com.pet.pipi.framework.lock4j.config.PipiLock4jConfiguration
+com.pet.pipi.framework.ratelimiter.config.PipiRateLimiterConfiguration
+com.pet.pipi.framework.signature.config.PipiApiSignatureAutoConfiguration

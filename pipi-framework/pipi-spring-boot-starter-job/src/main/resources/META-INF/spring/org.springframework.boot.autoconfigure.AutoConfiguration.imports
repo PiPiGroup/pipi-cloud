@@ -1,0 +1,2 @@
+com.pet.pipi.framework.quartz.config.PipiXxlJobAutoConfiguration
+com.pet.pipi.framework.quartz.config.PipiAsyncAutoConfiguration

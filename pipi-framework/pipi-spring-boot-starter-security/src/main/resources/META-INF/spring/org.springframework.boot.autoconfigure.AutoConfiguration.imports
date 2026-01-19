@@ -1,0 +1,5 @@
+com.pet.pipi.framework.security.config.PipiSecurityRpcAutoConfiguration
+com.pet.pipi.framework.security.config.PipiSecurityAutoConfiguration
+com.pet.pipi.framework.security.config.PipiWebSecurityConfigurerAdapter
+com.pet.pipi.framework.operatelog.config.PipiOperateLogConfiguration
+com.pet.pipi.framework.operatelog.config.PipiOperateLogRpcAutoConfiguration
